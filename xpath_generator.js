@@ -5,12 +5,12 @@ function ax_xpath_generator(e){
 	   /*get the index of last element*/
 	   var last_node_index = Array.prototype.slice.call(node.parentElement.children).indexOf(node);
 		
-		if(last_node_index == 0){ 
-			 var path = "/"+node.localName; 
+		if(node.parentElement.children.length == 1){ 
+		      var path = "/"+node.localName; 
 		}
-		else{ 
-			 last_node_index = last_node_index +1;
-			 var path = "/"+node.localName+"["+last_node_index+"]"; 
+		else if(node.parentElement.children.length > 1){ 
+		      last_node_index = last_node_index +1;
+		      var path = "/"+node.localName+"["+last_node_index+"]"; 
 		}
 		
     /*Loop the dom from the current element*/
