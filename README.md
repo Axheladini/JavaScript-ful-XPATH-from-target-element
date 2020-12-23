@@ -8,5 +8,5 @@ This JavaScript function generates full XPATH for given evnet.target element
 //body/div[2]/div/div[2]/div/article[1]/header/h2/a
 
 
-It was a perfect solution for me when generating XPATH for an element for using it with Selenium. 
+It was a perfect solution for me when needed to generate XPATH for an element which later was used with Selenium! 
 
