@@ -61,6 +61,7 @@ function ax_xpath_generator(e){
 							var current = "/"+node.localName+"["+node_index+"]";
 						}
                     }
+		
 							
 			 }
 			
